@@ -1,0 +1,9 @@
+.greeting__image {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    margin: 30px auto;
+    border-radius: 50%;
+}

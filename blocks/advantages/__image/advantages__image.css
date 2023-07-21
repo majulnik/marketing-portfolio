@@ -1,0 +1,6 @@
+.advantages__image {
+    object-fit: cover;
+    object-position: center top;
+    height: 300px;
+    width: 200px;
+}

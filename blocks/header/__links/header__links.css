@@ -1,0 +1,12 @@
+.header__links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 18px;
+    }
+    
+@media screen and (max-width: 767px) {
+    .header__links {
+        flex-direction: column;
+        gap: 32px;
+    }
+}

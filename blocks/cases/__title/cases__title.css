@@ -1,0 +1,10 @@
+.cases__title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0 50px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 900;
+    color: #FFFFFF;
+    max-width: 640px;
+}

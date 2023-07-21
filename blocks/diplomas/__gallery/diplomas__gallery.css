@@ -1,0 +1,5 @@
+.diplomas__gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}

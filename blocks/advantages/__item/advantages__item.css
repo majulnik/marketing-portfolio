@@ -1,0 +1,10 @@
+.advantages__item {
+    list-style: square;
+    text-align: start;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #FFFFFF;
+    max-width: 640px;
+}
