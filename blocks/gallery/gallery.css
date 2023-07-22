@@ -1,6 +1,7 @@
 div#quad { 
   background-color: #000; 
-  font-size: 0; width: 50%; 
+  font-size: 0; 
+  width: 60%; 
   margin: 0 auto;
   box-shadow: 0 0 12px rgba(0,0,0,0.8);
 }
@@ -8,19 +9,22 @@ div#quad figure {
   margin: 0; width: 50%; 
   height: auto; transition: 1s; 
   display: inline-block; 
-  position: relative; overflow: hidden; 
+  position: relative; 
+  overflow: hidden; 
 }
 div#quad figure:hover { cursor: pointer; z-index: 4; }
-div#quad figure img { width: 100%; height: auto; }
+div#quad figure img { max-width: 100%; height: auto; }
 div#quad figure:nth-child(1) { transform-origin: top left; }
 div#quad figure:nth-child(2) { transform-origin: top right; }
 div#quad figure:nth-child(3) { transform-origin: bottom left; }
 div#quad figure:nth-child(4) { transform-origin: bottom right; }
 div#quad figure figcaption { 
-  margin: 0; opacity: 0; 
+  margin: 0; 
+  opacity: 0; 
   background: rgba(0,0,0,0.3); 
-  color: #fff; padding: .3rem; 
-  font-size: 1.2rem; 
+  color: #fff; 
+  padding: .3rem; 
+  font-size: 0.7rem; 
   position: absolute; 
   bottom: 0; width: 100%;
   transition: 1s 1s opacity; 
@@ -28,3 +32,45 @@ div#quad figure figcaption {
 .expanded { transform: scale(2); z-index: 5;  }
 div#quad figure.expanded figcaption { opacity: 1; }
 div.full figure:not(.expanded) { pointer-events: none; }
+
+.tech-slideshow {
+  height: 200px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+
+
+
+
+.tech-slideshow > div {
+  height: 200px;
+  width: 2526px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 100s linear infinite;
+}
+.tech-slideshow .mover-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 100s linear infinite;
+}
+.tech-slideshow:hover .mover-2 {
+  opacity: 1;
+}
+
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
+  }
+}

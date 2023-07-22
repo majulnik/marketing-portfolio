@@ -8,6 +8,6 @@
 * Flexbox
 * PerfectPixel by WellDoneCode.
 
-[Ссылка на GitHub Pages](https://majulnik.github.io/marketing-portfolio/index.html)
+[Ссылка на GitHub Pages](https://majulnik.github.io/marketing-portfolio/)
 
 Your CMO Юлия Матросова
