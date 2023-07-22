@@ -1,6 +1,8 @@
 .presentations__title {
+    text-align: center;
     font-size: 12px;
     line-height: 20px;
     font-weight: 400;
     color: #FFFFFF;
+    text-decoration: none;
 }

@@ -1,4 +1,6 @@
 .header__link {
+    display: flex;
+    align-items: center;
     color: #FFFFFF;
     font-size: 16px;
     line-height: 18px;
@@ -9,6 +11,7 @@
 
 .header__link:hover {
     opacity: 0.8;
+    color: #B49082;
 }
 
 @media screen and (max-width: 767px) {

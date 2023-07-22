@@ -2,12 +2,12 @@
 
 ## На сайте представлены различные кейсы компаний для ознакомления
 
-### Проект сделан с использованием технологий:
+### Website сделан с использованием технологий:
 * HTML
 * CSS
 * Flexbox
 * PerfectPixel by WellDoneCode.
 
-[Ссылка на GitHub Pages](https://majulnik.github.io/russian-travel/index.html)
+[Ссылка на GitHub Pages](https://majulnik.github.io/marketing-portfolio/index.html)
 
-CMO Юлия Матросова
+Your CMO Юлия Матросова

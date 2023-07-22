@@ -1,7 +1,6 @@
 .advantages {
     max-width: 1184px;
-    background-color: #2A2C2F;
     margin: 50px auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
