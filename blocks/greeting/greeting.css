@@ -4,6 +4,7 @@
     align-items: center;
     max-width: 1184px;
     margin: 0 auto;
+    padding: 10px 0 10px 0;
 }
 
 @media screen and (max-width: 1279px) {

@@ -10,8 +10,4 @@
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
-    background-image: -webkit-linear-gradient(#222629 90%, #111314 10%);
-    background-image: -moz-linear-gradient(#222629 90%, #111314 10%);
-    background-image: -o-linear-gradient(#222629 90%, #111314 10%);
-    background-image: linear-gradient(#222629 90%, #111314 10%);
     }
