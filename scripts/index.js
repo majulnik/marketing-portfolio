@@ -1,41 +1,43 @@
 const popupImage = document.querySelector('#image_popup');
+const popupImageSrc = popupImage.querySelector('img');
 const closeImagePopup = document.querySelector('#closeImagePopup');
-const imageItems = document.querySelectorAll('.diplomas__item'); 
+const imageItems = Array.from(document.querySelectorAll('.diplomas__item'));
 
-imageItems.forEach(() => { 
-      imageItem.addEventListener('click', () => { 
-    openModal(popupImage); 
-  }); 
+
+imageItems.forEach(imageItem => {
+  imageItem.addEventListener('click', () => {
+    popupImageSrc.src = imageItem.src;
+    openModal(popupImage);
+  });
 });
 
-const waitEscapeFunction = function (evt) {
-  if (evt.key == 'Escape') { 
+function waitEscapeFunction(evt) {
+  if (evt.key == 'Escape') {
     const popup = document.querySelector('.popup_opened');
-    closeModal(popup); 
+    closeModal(popup);
   }
 }
 
 function openModal(popup) {
-  popup.classList.add('popup_opened');  
-  document.addEventListener('keydown', waitEscapeFunction);  
-} 
-  
+  popup.classList.add('popup_opened');
+  document.addEventListener('keydown', waitEscapeFunction);
+}
+
 function closeModal(popup) {
-  popup.classList.remove('popup_opened'); 
-    document.removeEventListener('keydown', waitEscapeFunction); 
-} 
+  popup.classList.remove('popup_opened');
+  document.removeEventListener('keydown', waitEscapeFunction);
+}
 
 closeImagePopup.addEventListener('click', () => {
-  closeModal(popupImage); 
+  closeModal(popupImage);
 });
 
-inputList.forEach((input) => { 
+const popups = Array.from(document.querySelectorAll('.popup')); 
 
-  input.addEventListener('input', () => { 
-
-      toggleInputState(form, input, params.inputErrorClass); 
-
-      toggleButtonState(inputList, buttonElement, params.inactiveButtonClass); 
-
-  }); 
-})
+popups.forEach(popup => {
+  popup.addEventListener('click', (evt) => {
+    if (evt.target.classList.contains('popup')) { 
+      closeModal(popup); 
+    }
+  });
+});

@@ -277,6 +277,10 @@
                 <img class="diplomas__item" src="./images/diplomas02.jpg" alt="Дипломы и сертификаты">
                 <img class="diplomas__item" src="./images/diplomas03.jpg" alt="Дипломы и сертификаты">
                 <img class="diplomas__item" src="./images/diplomas04.jpg" alt="Дипломы и сертификаты">
+                <img class="diplomas__item" src="./images/diplomas05.jpg" alt="Дипломы и сертификаты">
+                <img class="diplomas__item" src="./images/diplomas06.jpg" alt="Дипломы и сертификаты">
+                <img class="diplomas__item" src="./images/diplomas07.jpg" alt="Дипломы и сертификаты">
+                <img class="diplomas__item" src="./images/diplomas08.jpg" alt="Дипломы и сертификаты">
             </div>
     </section>
 
@@ -300,7 +304,6 @@
     <div class="popup popup_theme_dark" id="image_popup">
         <figure class="popup__image-gallery">
             <img class="popup__image" id="popupImageSrc">
-            <figcaption id="popupImageName" class="popup__image-name">Название</figcaption>
             <button class="popup__close" id="closeImagePopup" type="button"></button>
         </figure>
     </div>
@@ -324,13 +327,7 @@
  <!-- /Yandex.Metrika counter -->
 
  <script>
-  $('button').click(function() {
-  $("article").toggleClass("paused")
-});
- </script>
-
- <script>
-    var quadimages = document.querySelectorAll("#quad figure");
+    var quadimages = Array.from(document.querySelectorAll("#quad figure"));
 for(i=0; i<quadimages.length; i++) {
   quadimages[i].addEventListener('click', function(){ this.classList.toggle("expanded"); quad.classList.toggle("full") }); 
 }
