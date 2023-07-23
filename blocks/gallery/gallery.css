@@ -1,7 +1,7 @@
 div#quad { 
   background-color: #000; 
   font-size: 0; 
-  width: 60%; 
+  width: 65%; 
   margin: 0 auto;
   box-shadow: 0 0 12px rgba(0,0,0,0.8);
 }
@@ -29,27 +29,25 @@ div#quad figure figcaption {
   bottom: 0; width: 100%;
   transition: 1s 1s opacity; 
 }
+
+/* My own photo gallery with pictures from work */
 .expanded { transform: scale(2); z-index: 5;  }
 div#quad figure.expanded figcaption { opacity: 1; }
 div.full figure:not(.expanded) { pointer-events: none; }
 
 .tech-slideshow {
   height: 200px;
-  max-width: 800px;
+  max-width: 875px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
 }
 
-
-
-
-
 .tech-slideshow > div {
   height: 200px;
   width: 2526px;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);
+  background: url(../../images/pictures_from_work.jpg);
   position: absolute;
   top: 0;
   left: 0;
@@ -57,13 +55,13 @@ div.full figure:not(.expanded) { pointer-events: none; }
   transform: translate3d(0, 0, 0);
 }
 .tech-slideshow .mover-1 {
-  animation: moveSlideshow 100s linear infinite;
+  animation: moveSlideshow 50s linear infinite;
 }
 .tech-slideshow .mover-2 {
   opacity: 0;
   transition: opacity 0.5s ease-out;
   background-position: 0 -200px;
-  animation: moveSlideshow 100s linear infinite;
+  animation: moveSlideshow 50s linear infinite;
 }
 .tech-slideshow:hover .mover-2 {
   opacity: 1;
