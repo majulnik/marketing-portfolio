@@ -1,7 +1,7 @@
 div#quad { 
   background-color: #000; 
   font-size: 0; 
-  width: 65%; 
+  width: 55%; 
   margin: 0 auto;
   box-shadow: 0 0 12px rgba(0,0,0,0.8);
 }
@@ -28,6 +28,12 @@ div#quad figure figcaption {
   position: absolute; 
   bottom: 0; width: 100%;
   transition: 1s 1s opacity; 
+}
+
+@media screen and (max-width: 767px) {
+  div#quad {
+    width: 85%; 
+  }
 }
 
 /* My own photo gallery with pictures from work */
