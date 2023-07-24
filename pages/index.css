@@ -24,8 +24,10 @@
 
 @import url('../blocks/cases/__gallery/cases__gallery.css');
 @import url('../blocks/cases/__title/cases__title.css');
+@import url('../blocks/cases/__text/cases__text.css');
 
 @import url('../blocks/presentations/__item/presentation__item.css');
+@import url('../blocks/presentations/__block/presentations__block.css');
 @import url('../blocks/presentations/__title/presentations__title.css');
 
 @import url('../blocks/diplomas/diplomas.css');
@@ -33,6 +35,8 @@
 @import url('../blocks/diplomas/__item/diplomas__item.css');
 
 @import url('../blocks/contacts/contacts.css');
+@import url('../blocks/contacts/__icon/contacts__icon.css');
+@import url('../blocks/contacts/__item/contacts__item.css');
 
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/footer/__top/footer__top.css');

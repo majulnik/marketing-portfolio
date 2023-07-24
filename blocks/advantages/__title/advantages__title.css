@@ -1,10 +1,10 @@
 .advantages__title {
     text-align: center;
     margin: 0 auto;
-    padding-top: 20px;
     font-size: 16px;
     line-height: 26px;
     font-weight: 700;
     color: #FFFFFF;
     max-width: 640px;
+    padding: 20px 10px 0 10px;
 }

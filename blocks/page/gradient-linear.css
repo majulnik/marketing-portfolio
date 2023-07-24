@@ -1,3 +1,7 @@
 .gradient-linear {
     background-image: linear-gradient(#222629 75%, #111314);
 }
+
+.gradient-linear_invert {
+    background-image: linear-gradient(#111314 5%, #222629);
+}

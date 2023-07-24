@@ -5,3 +5,9 @@
     width: 200px;
     padding: 0 20px 0 20px;
 }
+
+@media screen and (max-width: 767px) {
+    .advantages__image {
+        margin: 0 auto;
+    }
+}
